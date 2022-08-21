@@ -1,5 +1,5 @@
 cask "vizir4" do
-    version "2020.09.09"
+    version :latest
     sha256 "676d64fc9fa7dfedefb70268e4142ba926d33297a4d89c29c19cb93bee4a484a"
 
     url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2020.09.09.dmg"
