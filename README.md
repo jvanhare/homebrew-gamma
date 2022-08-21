@@ -1,4 +1,4 @@
-# Jvanhare Gamma
+# Homebrew tap for GAMMA team's softwares
 
 ## How do I install these formulae?
 
