@@ -1,11 +1,7 @@
 # Homebrew tap for GAMMA team's softwares
 
-## How do I install these formulae?
+## Install the last version of ViZiR 4
 
-`brew install jvanhare/gamma/<formula>`
-
-Or `brew tap jvanhare/gamma` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```sh
+brew install jvanhare/gamma/vizir4
+```
