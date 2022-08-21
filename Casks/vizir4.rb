@@ -8,5 +8,8 @@ cask "vizir4" do
     homepage "https://pyamg.saclay.inria.fr/vizir4.html"
 
     app "vizir4.app"
-    binary "#{appdir}/vizir4.app/Contents/MacOS/vizir4"
+    
+    caveats do
+        path_environment_variable "#{appdir}/vizir4.app/Contents/MacOS"
+    end
 end
