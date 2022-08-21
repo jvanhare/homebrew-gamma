@@ -10,7 +10,9 @@ cask "vizir4" do
     app "vizir4.app"
 
     livecheck do
-        url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/"
+        url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac"
+        strategy :page_match
+        regex(%r{href=.*?/MyApp-(\d+(?:\.\d+)*)\.dmg}i)
     end
     
     caveats do
