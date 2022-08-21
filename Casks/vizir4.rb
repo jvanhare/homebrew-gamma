@@ -14,9 +14,7 @@ cask "vizir4" do
         strategy :page_match
         regex(/href=.*?vizir4.?(\d+(?:\.\d+)+).dmg/i)
     end
-
-    auto_updates true
-    
+   
     caveats do
         path_environment_variable "#{appdir}/vizir4.app/Contents/MacOS"
     end
