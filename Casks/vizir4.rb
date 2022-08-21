@@ -12,7 +12,7 @@ cask "vizir4" do
     livecheck do
         url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac"
         strategy :page_match
-        regex(%r{href=.*?/MyApp-(\d+(?:\.\d+)*)\.dmg}i)
+        regex(%r{href=.*?/vizir4.(\d+(?:\.\d+)*)\.dmg}i)
     end
     
     caveats do
