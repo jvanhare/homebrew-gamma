@@ -9,7 +9,7 @@ cask "vizir4" do
 
     app "vizir4.app"
 
-    auto_update true
+    auto_updates true
 
     livecheck do
         url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac"
