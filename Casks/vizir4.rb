@@ -9,13 +9,13 @@ cask "vizir4" do
 
     app "vizir4.app"
 
-    auto_updates true
-
     livecheck do
         url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac"
         strategy :page_match
         regex(/href=.*?vizir4.?(\d+(?:\.\d+)+).dmg/i)
     end
+
+    auto_updates true
     
     caveats do
         path_environment_variable "#{appdir}/vizir4.app/Contents/MacOS"
