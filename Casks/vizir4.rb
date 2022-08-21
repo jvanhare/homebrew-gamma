@@ -9,6 +9,8 @@ cask "vizir4" do
 
     app "vizir4.app"
 
+    auto_update true
+
     livecheck do
         url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac"
         strategy :page_match
