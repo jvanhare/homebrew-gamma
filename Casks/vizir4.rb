@@ -8,6 +8,10 @@ cask "vizir4" do
     homepage "https://pyamg.saclay.inria.fr/vizir4.html"
 
     app "vizir4.app"
+
+    livecheck do
+        url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/"
+    end
     
     caveats do
         path_environment_variable "#{appdir}/vizir4.app/Contents/MacOS"
