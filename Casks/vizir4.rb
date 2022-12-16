@@ -14,6 +14,7 @@ cask "vizir4" do
   end
 
   app "vizir4.app"
+
   caveats do
     path_environment_variable "#{appdir}/vizir4.app/Contents/MacOS"
   end
