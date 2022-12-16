@@ -2,7 +2,7 @@ cask "vizir4" do
   version "2022.10.18"
   sha256 :no_check
 
-  url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2022.06.09.dmg"
+  url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.#{version}.dmg"
   name "ViZiR 4"
   desc "Interactive meshes and solutions visualization tool"
   homepage "https://pyamg.saclay.inria.fr/vizir4.html"
