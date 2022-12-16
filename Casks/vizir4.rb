@@ -1,6 +1,6 @@
 cask "vizir4" do
     version "2022.06.09"
-    sha256 "7f247283eb1b635918e61416090804277baf8ea76d9ddf87077360c3029416a8"
+    sha256 :no_check
 
     url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2022.06.09.dmg"
     name "ViZiR 4"
