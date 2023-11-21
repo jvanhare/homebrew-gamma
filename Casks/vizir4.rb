@@ -1,5 +1,5 @@
 cask "vizir4" do
-  version "2022.10.18"
+  version "2023.07.31"	
   sha256 :no_check
 
   url "https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.#{version}.dmg"
