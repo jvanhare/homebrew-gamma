@@ -1,2 +1,1 @@
-# homebrew-gamma
-Brew tap for Inria Gamma softwares
+# homebrew-gamma: brew tap for Inria Gamma softwares
