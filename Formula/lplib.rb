@@ -1,4 +1,4 @@
-class LPlib < Formula
+class Lplib < Formula
   desc "A parallelization framework for numerical simulation."
   homepage "https://github.com/LoicMarechal/LPlib"
   url "https://github.com/LoicMarechal/LPlib/archive/a20c306.tar.gz"
