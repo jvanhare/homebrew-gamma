@@ -9,6 +9,11 @@ class Tetgen < Formula
         system ENV.cxx, "-O0", "-fPIC", "-c", "predicates.cxx"
         system ENV.cxx, "-O3", "-fPIC", "-o", "tetgen", "tetgen.cxx", "predicates.o", "-lm"
         system ENV.cxx, "-O3", "-fPIC", "-DTETLIBRARY", "-c", "tetgen.cxx"
-        system ENV.ar, "rcs", "libtet.a", "tetgen.o", "predicates.o"
+
+        if OS.mac?
+            system "libtool", "-static", "-o", "libtet.a", "tetgen.o", "predicates.o"
+        else
+            system "ar", "rcs", "libtet.a", "tetgen.o", "predicates.o"
+        end
     end
 end
