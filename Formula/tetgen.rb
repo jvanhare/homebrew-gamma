@@ -6,9 +6,9 @@ class Tetgen < Formula
     license "AGPL-3.0-only"
 
     def install
-        system ENV.cc, "-O0", "-fPIC", "-c", "predicates.cxx"
-        system ENV.cc, "-O3", "-fPIC", "-o", "tetgen", "tetgen.cxx", "predicates.o", "-lm"
-        system ENV.cc, "-O3", "-fPIC", "-DTETLIBRARY", "-c", "tetgen.cxx"
+        system ENV.cxx, "-O0", "-fPIC", "-c", "predicates.cxx"
+        system ENV.cxx, "-O3", "-fPIC", "-o", "tetgen", "tetgen.cxx", "predicates.o", "-lm"
+        system ENV.cxx, "-O3", "-fPIC", "-DTETLIBRARY", "-c", "tetgen.cxx"
         system ENV.ld, "r", "libtet.a", "tetgen.o", "predicates.o"
     end
 end
