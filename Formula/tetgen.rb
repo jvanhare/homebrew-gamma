@@ -15,5 +15,9 @@ class Tetgen < Formula
         else
             system "ar", "rcs", "libtet.a", "tetgen.o", "predicates.o"
         end
+
+        bin.install "tetgen"
+        include.install "tetgen.h"
+        lib.install "libtet.a"
     end
 end
