@@ -5,10 +5,10 @@ class Tetgen < Formula
     sha256 "0fff0l6i3xfjlm0zkcgyyhwndp8i5d615mydyb21yirsplgfddc7"
     license "AGPL-3.0-only"
 
-def install
-    system ENV.cc, "-O0", "-fPIC", "-c", "predicates.cxx"
-    system ENV.cc, "-O3", "-fPIC", "-o", "tetgen", "tetgen.cxx", "predicates.o", "-lm"
-    system ENV.cc, "-O3", "-fPIC", "-DTETLIBRARY", "-c", "tetgen.cxx"
-    system ENV.ld, "r", "libtet.a", "tetgen.o", "predicates.o"
-
+    def install
+        system ENV.cc, "-O0", "-fPIC", "-c", "predicates.cxx"
+        system ENV.cc, "-O3", "-fPIC", "-o", "tetgen", "tetgen.cxx", "predicates.o", "-lm"
+        system ENV.cc, "-O3", "-fPIC", "-DTETLIBRARY", "-c", "tetgen.cxx"
+        system ENV.ld, "r", "libtet.a", "tetgen.o", "predicates.o"
+    end
 end
