@@ -9,7 +9,7 @@ class Libmeshb < Formula
   depends_on "cmake" => :build
 
   def install
-    system "cmake", "-S", ".", "-B", "build", "-DBUILD_SHARED_LIBS=ON", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", "-DBUILD_SHARED_LIBS=ON", "-DCMAKE_BUILD_TYPE=Debug" *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
