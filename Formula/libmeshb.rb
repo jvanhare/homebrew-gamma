@@ -4,6 +4,7 @@ class Libmeshb < Formula
   url "https://github.com/LoicMarechal/libMeshb/archive/418213e.tar.gz"
   sha256 "db9d3091ecb7fb3478c26f0ca51535cb9f0bbac4beed7f2c9fdb539880f4a957"
   license "MIT"
+  version "7.80"
 
   depends_on "cmake" => :build
 
