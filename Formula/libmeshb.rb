@@ -6,10 +6,12 @@ class Libmeshb < Formula
   license "MIT"
   version "7.80"
 
+  patch :DATA
+
   depends_on "cmake" => :build
 
   def install
-    system "cmake", "-S", ".", "-B", "build", "-DBUILD_SHARED_LIBS=ON", "-DCMAKE_INSTALL_INCLUDEDIR=include/libmeshb", "-DCMAKE_Fortran_COMPILER=", "-DWITH_GMF_CTEST=OFF", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", "-DCMAKE_BUILD_TYPE=Release", "-DCMAKE_INSTALL_PREFIX=#{prefix}"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
@@ -18,3 +20,20 @@ class Libmeshb < Formula
     system "true"
   end
 end
+
+
+__END__
+diff --git a/sources/CMakeLists.txt b/sources/CMakeLists.txt
+--- a/sources/CMakeLists.txt
++++ b/sources/CMakeLists.txt
+@@
+-if(CMAKE_Fortran_COMPILER)
+-  install(DIRECTORY ${CMAKE_Fortran_MODULE_DIRECTORY}/ DESTINATION include)
+-endif()
++if(CMAKE_Fortran_COMPILER)
++  if(EXISTS ${CMAKE_Fortran_MODULE_DIRECTORY})
++    install(DIRECTORY ${CMAKE_Fortran_MODULE_DIRECTORY}/
++            DESTINATION include
++            FILES_MATCHING PATTERN "*.mod")
++  endif()
++endif()
