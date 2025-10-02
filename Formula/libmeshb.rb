@@ -7,6 +7,7 @@ class Libmeshb < Formula
   version "7.80"
 
   depends_on "cmake" => :build
+  depends_on "gfortran" => :build
 
   def install
     system "cmake", "-S", ".", "-B", "build", "-DBUILD_SHARED_LIBS=ON", *std_cmake_args
