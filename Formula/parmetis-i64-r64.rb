@@ -6,7 +6,7 @@ class ParmetisI64R64 < Formula
   license "Apache-2.0"
 
   depends_on "cmake" => :build
-  depends_on "ouranos-open-mpi"
+  depends_on "open-mpi"
 
   def install
     system "cmake", "-S", ".", "-B", "build", "-DMETIS_I64=ON", "-DMETIS_R64=ON", *std_cmake_args
