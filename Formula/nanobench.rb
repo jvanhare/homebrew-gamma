@@ -6,6 +6,6 @@ class Nanobench < Formula
   license "MIT"
 
   def install
-    include.install "nanobench.h"
+    (include/"nanobench").install "nanobench.h"
   end
 end
