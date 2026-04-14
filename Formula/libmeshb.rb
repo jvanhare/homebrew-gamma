@@ -1,10 +1,10 @@
 class Libmeshb < Formula
   desc "A library to handle the *.meshb file format."
   homepage "https://github.com/LoicMarechal/libMeshb"
-  url "https://github.com/LoicMarechal/libMeshb/archive/952a157.tar.gz"
-  sha256 "db9d3091ecb7fb3478c26f0ca51535cb9f0bbac4beed7f2c9fdb539880f4a957"
+  url "https://github.com/LoicMarechal/libMeshb/archive/8fb5badd478f634eb3b082a1afb5b46e4cad8a5e.tar.gz"
+  sha256 "24b71e5c5fbb6f15cff88e9a29eb32b1fcf1754dbf209a09a5cea73736f7534c"
   license "MIT"
-  version "7.80"
+  version "8.00"
 
   depends_on "cmake" => :build
   depends_on "gfortran" => :build
