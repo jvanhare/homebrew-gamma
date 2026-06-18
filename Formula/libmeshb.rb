@@ -1,7 +1,7 @@
 class Libmeshb < Formula
   desc "A library to handle the *.meshb file format."
   homepage "https://github.com/LoicMarechal/libMeshb"
-  url "https://github.com/LoicMarechal/libMeshb/archive/8fb5badd478f634eb3b082a1afb5b46e4cad8a5e.tar.gz"
+  url "https://github.com/LoicMarechal/libMeshb/archive/3c1f8b9a3484e28ebb74c2f6144e367415541527.tar.gz"
   sha256 "cae25c5b230a6a0348f9b8c0b8a341ab0118eec522f7b3a2f255f79b51910439"
   license "MIT"
   version "8.00"
