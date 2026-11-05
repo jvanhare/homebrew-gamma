@@ -6,6 +6,8 @@ class ScotchI64 < Formula
   license "CECILL-C"
   head "https://gitlab.inria.fr/scotch/scotch.git", branch: "master"
 
+  conflicts_with "scotch", because: "both install scotch.h and libscotch"
+
   depends_on "bison" => :build
   depends_on "flex" => :build
   depends_on "cmake" => :build
